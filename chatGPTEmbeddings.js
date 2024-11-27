@@ -1,7 +1,7 @@
 var ajaxCall = (key, url, prompt) => {
   return new Promise((resolve, reject) => {
     $.ajax({
-      url: url,
+      url: "https://api.openai.com/v1/embeddings",
       type: "POST",
       dataType: "json",
       data: JSON.stringify({
