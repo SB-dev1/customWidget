@@ -1,5 +1,3 @@
-
-
 {
   "eula": "",
   "vendor": "dataloom",
@@ -7,12 +5,12 @@
   "id": "dataloomchatgptembeddings",
   "version": "1.0.0",
   "name": "chatGPT SAC",
-  "newInstancePrefix": "chatGPTInSAC",
+  "newInstancePrefix": "chatGPTEmbeddings",
   "description": "A custom widget to integrate chatGPT4 in SAC Analytic application",
   "webcomponents": [
     {
       "kind": "main",
-      "tag": "custom-widget",
+      "tag": "custom-widget-chatgpt-embeddings",
       "url": "https://github.com/SB-dev1/customWidget/blob/main/chatGPTEmbeddings.js",
       "integrity": "",
       "ignoreIntegrity": true
@@ -29,7 +27,7 @@
 		}
   },
   "methods": {
-		"post": {
+		"getEmbeddings": {
 			"description": "Wrapper for jQuery post",
 			"parameters": [
 				{
@@ -38,12 +36,7 @@
 					"description": ""
 				},
 				{
-					"name": "endPoint",
-					"type": "string",
-					"description": ""
-				},
-				{
-					"name": "prompt",
+					"name": "input",
 					"type": "string",
 					"description": ""
 				}
